@@ -38,6 +38,7 @@ class Controls {
   isPressed: boolean = false;
   isReleased: boolean = false;
   pressFlag: boolean = false;
+  gamepad: any;
 
   constructor() {
     document.addEventListener('keydown', event => this.toggleKey(event, true));
@@ -59,8 +60,14 @@ class Controls {
     this.previousState.isAttack = this.isAttack;
     this.previousState.isDash = this.isDash;
 
-    const gamepad = navigator.getGamepads()[0];
-    const isButtonPressed = (button: XboxControllerButton) => gamepad?.buttons[button].pressed;
+    const gamepads = navigator.getGamepads();
+
+    for(const gpad of gamepads) {
+      if(gpad) {
+        this.gamepad = gpad
+      }
+    }
+    const isButtonPressed = (button: XboxControllerButton) => this.gamepad?.buttons[button].pressed;
 
     const leftVal = (this.keyMap.get('KeyA') || this.keyMap.get('ArrowLeft') || isButtonPressed(XboxControllerButton.DpadLeft)) ? -1 : 0;
     const rightVal = (this.keyMap.get('KeyD') || this.keyMap.get('ArrowRight') || isButtonPressed(XboxControllerButton.DpadRight)) ? 1 : 0;
@@ -69,8 +76,8 @@ class Controls {
     
     // const attackVal = (this.keyMap.get('KeyJ') || this.keyMap.get('Numpad2') || isButtonPressed(XboxControllerButton.A));
 
-    this.inputDirection.x = (leftVal + rightVal) || gamepad?.axes[0] || 0;
-    this.inputDirection.y = (upVal + downVal) || gamepad?.axes[1] || 0;
+    this.inputDirection.x = (leftVal + rightVal) || this.gamepad?.axes[0] || 0;
+    this.inputDirection.y = (upVal + downVal) || this.gamepad?.axes[1] || 0;
 
     const deadzone = 0.1;
     if (Math.hypot(this.inputDirection.x, this.inputDirection.y) < deadzone) {
