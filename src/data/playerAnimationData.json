@@ -1,0 +1,38 @@
+[
+    {
+      "animationName": "idle",
+      "props": {
+        "frameCount": 2,
+        "frameBuffer": 10,
+        "loop": true,
+        "src": "knight_idle.png"
+      }
+    },
+    {
+      "animationName": "run",
+      "props": {
+        "frameCount": 3,
+        "frameBuffer": 5,
+        "loop": true,
+        "src": "knight_run.png"
+      }
+    },
+    {
+      "animationName": "attack",
+      "props": {
+        "frameCount": 2,
+        "frameBuffer": 7,
+        "loop": true,
+        "src": "knight_attack.png"
+      }
+    },
+    {
+      "animationName": "died",
+      "props": {
+        "frameCount": 1,
+        "frameBuffer": 16,
+        "loop": false,
+        "src": "knight_dead.png"
+      }
+    }
+  ]

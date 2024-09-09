@@ -1,0 +1,11 @@
+[
+    {
+      "animationName": "fly",
+      "props": {
+        "frameCount": 2,
+        "frameBuffer": 8,
+        "loop": true,
+        "src": "bat_fly.png"
+      }
+    }    
+  ]

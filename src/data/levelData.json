@@ -1,0 +1,464 @@
+[
+    {
+        "levelNumber": 1,
+        "tileDataKey": "level1TilesData",
+        "levelChangePoints": [
+            {
+                "positionX": 145,
+                "positionY": -30,
+                "currentLevel": 1,
+                "nextLevel": 2
+            }
+        ],
+        "player": {
+            "positionX": 147,
+            "positionY": 106,
+            "src": "knight_idle.png",
+            "animations": []
+        },
+        "door": [
+            {
+                "positionX": 145,
+                "positionY": 32,
+                "src": "door_front_close.png",
+                "animations": [],
+                "orientation": "up",
+                "status": "close"
+            }
+        ],
+        "enemies": {
+            "skullEnemy": [
+                {
+                    "positionX": 88,
+                    "positionY": 34,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                },
+                {
+                    "positionX": 201,
+                    "positionY": 34,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                }
+            ],
+            "batEnemy": [
+            ]
+        }
+        
+    },
+    {
+        "levelNumber": 2,
+        "tileDataKey": "level2TilesData",
+        "levelChangePoints": [
+            {
+                "positionX": 320,
+                "positionY": 50,
+                "currentLevel": 2,
+                "nextLevel": 3
+            }
+        ],
+        "player": {
+            "positionX": 144,
+            "positionY": 128,
+            "src": "knight_idle.png",
+            "animations": []
+        },
+        "door":[
+            {
+                "positionX": 288,
+                "positionY": 52,
+                "src": "door_side_close.png",
+                "animations": [],
+                "orientation": "right",
+                "status": "open"
+            },
+            {
+                "positionX": 145,
+                "positionY": 160,
+                "src": "door_front_close.png",
+                "animations": [],
+                "orientation": "down",
+                "status": "open",
+                "needKey": false,
+                "blocked": true
+            }
+        ],
+        "enemies": {
+            "skullEnemy": [
+            ],
+            "batEnemy": [
+                {
+                    "positionX": 230,
+                    "positionY": 70,
+                    "src": "bat_fly.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                }
+            ]
+        },
+        "collectibales": {
+            "healthUpgrade": [
+                {
+                    "positionX": 97,
+                    "positionY": 85
+                }
+            ]
+        }
+    },
+    {
+        "levelNumber": 3,
+        "tileDataKey": "level3TilesData",
+        "levelChangePoints": [
+            {
+                "positionX": 177,
+                "positionY": -30,
+                "currentLevel": 3,
+                "nextLevel": 4
+            }
+        ],
+        "player": {
+            "positionX": 60,
+            "positionY": 55,
+            "src": "knight_idle.png",
+            "animations": []
+        },
+        "door":[
+            {
+                "positionX": 176.55,
+                "positionY": 15.15,
+                "src": "door_front_close.png",
+                "animations": [],
+                "orientation": "up",
+                "status": "open"
+            },
+            {
+                "positionX": 33.09,
+                "positionY": 53.45,
+                "src": "door_side_close.png",
+                "animations": [],
+                "orientation": "left",
+                "status": "open",
+                "needKey": false,
+                "blocked": true
+            }
+        ],
+        "enemies": {
+            "skullEnemy": [
+                {
+                    "positionX": 216,
+                    "positionY": 100,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                },
+                {
+                    "positionX": 135,
+                    "positionY": 110,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                }
+            ],
+            "batEnemy": [
+                {
+                    "positionX": 240,
+                    "positionY": 40,
+                    "src": "bat_fly.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                }
+            ]
+        }
+    },    
+    {
+        "levelNumber": 4,
+        "tileDataKey": "level4TilesData",
+        "levelChangePoints": [
+            {
+                "positionX": 207,
+                "positionY": -30,
+                "currentLevel": 4,
+                "nextLevel": 5
+            }
+        ],
+        "player": {
+            "positionX": 80,
+            "positionY": 125,
+            "src": "knight_idle.png",
+            "animations": []
+        },
+        "door":[
+            {
+                "positionX": 209,
+                "positionY": 15.15,
+                "src": "door_front_close.png",
+                "animations": [],
+                "orientation": "up",
+                "status": "open"
+            },
+            {
+                "positionX": 80.96,
+                "positionY": 159.13,
+                "src": "door_front_close.png",
+                "animations": [],
+                "orientation": "down",
+                "status": "open",
+                "needKey": false,
+                "blocked": true
+            }
+        ],
+        "enemies": {
+            "skullEnemy": [
+                {
+                    "positionX": 129,
+                    "positionY": 22,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                },
+                {
+                    "positionX": 248,
+                    "positionY": 55,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                },
+                {
+                    "positionX": 201,
+                    "positionY": 120,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                }
+            ],
+            "batEnemy": [
+                {
+                    "positionX": 55,
+                    "positionY": 38,
+                    "src": "bat_fly.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                },
+                {
+                    "positionX": 195,
+                    "positionY": 66,
+                    "src": "bat_fly.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                }
+            ]
+        },
+        "collectibales": {
+            "healthUpgrade": [
+                {
+                    "positionX": 267,
+                    "positionY": 120
+                }
+            ]
+        }
+    },
+    {
+        "levelNumber": 5,
+        "tileDataKey": "level5TilesData",
+        "levelChangePoints": [
+            {
+                "positionX": 113.13,
+                "positionY": -30,
+                "currentLevel": 5,
+                "nextLevel": 7
+            },
+            {
+                "positionX": 318.50,
+                "positionY": 80,
+                "currentLevel": 5,
+                "nextLevel": 6
+            }
+        ],
+        "player": {
+            "positionX": 80,
+            "positionY": 107,
+            "src": "knight_idle.png",
+            "animations": []
+        },
+        "door":[
+            {
+                "positionX": 113,
+                "positionY": 48,
+                "src": "door_front_close.png",
+                "animations": [],
+                "orientation": "up",
+                "status": "open",
+                "needKey": true
+            },
+            {
+                "positionX": 81,
+                "positionY": 141.81,
+                "src": "door_front_close.png",
+                "animations": [],
+                "orientation": "down",
+                "status": "open",
+                "needKey": false,
+                "blocked": true
+            }
+        ],
+        "enemies": {
+            "skullEnemy": [
+                {
+                    "positionX": 185,
+                    "positionY": 85,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                }
+            ],
+            "batEnemy": [
+            ]
+        },
+        "collectibales": {
+            "healthUpgrade": [
+                {
+                    "positionX": 130,
+                    "positionY": 22
+                }
+            ],
+            "keys": [
+            ]
+        }
+    },
+    {
+        "levelNumber": 6,
+        "tileDataKey": "level6TilesData",
+        "levelChangePoints": [
+            {
+                "positionX": -30,
+                "positionY": 81,
+                "currentLevel": 6,
+                "nextLevel": 5,
+                "playerNewPositionX":290,
+                "playerNewPositionY": 85
+            }
+        ],
+        "player": {
+            "positionX": 6,
+            "positionY": 85,
+            "src": "knight_idle.png",
+            "animations": []
+        },
+        "enemies": {
+            "skullEnemy": [
+            ],
+            "batEnemy": [
+            ]
+        },
+        "collectibales": {
+            "keys": [
+                {
+                    "positionX": 68,
+                    "positionY": 79
+                }
+            ]
+        }
+    },
+    {
+        "levelNumber": 7,
+        "tileDataKey": "level7TilesData",
+        "levelChangePoints": [
+            {
+            }
+        ],
+        "player": {
+            "positionX": 145,
+            "positionY": 125,
+            "src": "knight_idle.png",
+            "animations": []
+        },
+        "door": [
+            {
+                "positionX": 145,
+                "positionY": 157,
+                "src": "door_front_close.png",
+                "animations": [],
+                "orientation": "down",
+                "status": "open",
+                "needKey": false,
+                "blocked": true
+            }
+        ],
+        "enemies": {
+            "skullEnemy": [
+                {
+                    "positionX": 58,
+                    "positionY": 125,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                },
+                {
+                    "positionX": 226,
+                    "positionY": 60,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                },
+                {
+                    "positionX": 88,
+                    "positionY": 45,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                },
+                {
+                    "positionX": 250,
+                    "positionY": 130,
+                    "src": "skull_enemy_died.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                }
+            ],
+            "batEnemy": [
+                {
+                    "positionX": 31,
+                    "positionY": 72,
+                    "src": "bat_fly.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                },
+                {
+                    "positionX": 186,
+                    "positionY": 35,
+                    "src": "bat_fly.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                },
+                {
+                    "positionX": 256,
+                    "positionY": 100,
+                    "src": "bat_fly.png",
+                    "animations": [],
+                    "canMove": true,
+                    "moveSpeed": 0.06
+                }
+            ]
+        }
+    }
+]

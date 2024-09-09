@@ -1,0 +1,39 @@
+[
+    {
+      "animationName": "front_close",
+      "props": {
+        "frameCount": 1,
+        "frameBuffer": 1,
+        "loop": false,
+        "src": "door_front_close.png"
+      }
+    },
+    {
+      "animationName": "front_open",
+      "props": {
+        "frameCount": 1,
+        "frameBuffer": 1,
+        "loop": false,
+        "src": "door_front_open.png"
+      }
+    },
+    {
+        "animationName": "side_close",
+        "props": {
+          "frameCount": 1,
+          "frameBuffer": 1,
+          "loop": false,
+          "src": "door_side_close.png"
+        }
+      },
+      {
+        "animationName": "side_open",
+        "props": {
+          "frameCount": 1,
+          "frameBuffer": 1,
+          "loop": false,
+          "src": "door_side_open.png"
+        }
+      }
+    
+  ]

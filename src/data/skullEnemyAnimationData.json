@@ -1,0 +1,21 @@
+[
+    {
+      "animationName": "run",
+      "props": {
+        "frameCount": 2,
+        "frameBuffer": 8,
+        "loop": true,
+        "src": "skull_enemy_run.png"
+      }
+    },
+    {
+      "animationName": "died",
+      "props": {
+        "frameCount": 1,
+        "frameBuffer": 1,
+        "loop": false,
+        "src": "skull_enemy_died.png"
+      }
+    }
+    
+  ]
